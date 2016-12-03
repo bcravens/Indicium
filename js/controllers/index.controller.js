@@ -11,5 +11,5 @@
   function IndexController(TweetFactory){
     this.newTweet = new TweetFactory();
   }
-  //hey its rob
+
 }());
