@@ -4,11 +4,11 @@
   angular
   .module("indicium")
   .controller("IndexController", [
-    "SearchFactory",
+    "TweetFactory",
     IndexController
   ]);
 
-  function IndexController(Searchfactory){
-    this.newTweet = new SearchFactory();
+  function IndexController(TweetFactory){
+    this.newTweet = new TweetFactory();
   }
 }());
