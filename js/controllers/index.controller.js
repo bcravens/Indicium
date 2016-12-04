@@ -10,6 +10,7 @@
 
   function IndexController(TweetFactory){
     this.newTweet = new TweetFactory();
+    
   }
 
 }());
