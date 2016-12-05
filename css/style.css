@@ -1,3 +1,42 @@
-body{
-  background-color: lemonchiffon;
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background: url("https://static.pexels.com/photos/30975/pexels-photo-30975.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  width: 100px;
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #FFF;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+button:hover, .button-link:focus {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+button:active {
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+    text-decoration: none;
+}
+button:focus {outline: none;}
+input {
+  margin: 5px 0 20px 0;
+  padding: 10px;
+  border: solid 1px black;
+  width: 200px;
 }
