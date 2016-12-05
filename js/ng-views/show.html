@@ -1,7 +1,19 @@
 
 
 <h2>These are all the Tweets</h2>
-
-<div data-ng-repeat="tweet in vm.tweets">
+<h1>Sentiment:</h1>
+<h2>{{vm.sentiment.probability}}</h2>
+<h2>{{vm.sentiment.label}}</h2>
+<h1>Tweets:</h1>
+<div data-ng-repeat="tweet in vm.tweets" style="width: 30vw">
   <p>{{tweet.body}}</p>
+  <div>
+    <ul>
+      <li><a href="#">test</a></li>
+      <li><a href="#">test</a></li>
+      <li><a href="#">test</a></li>
+      <li><a href="#">test</a></li>
+    </ul>
+  </div>
+  <hr>
 </div>
