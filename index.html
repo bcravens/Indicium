@@ -10,21 +10,10 @@
 </head>
 
 <body>
-    <div class="header">
-      <div id="logo">
-          <a  href="#/">Home</a>
+      <div ng-controller="IndexController as vm">
+        <input ng-model="vm.newSearch">
+        <button ng-click="vm.addSearch()">Search</button>
       </div>
-
-      <div id="searchbox">
-          search box
-      </div>
-
-      <div id="nav">
-          <span>nav1</span>
-          <span>nav1</span>
-          <span>nav1</span>
-      </div>
-    </div>
 
     <main data-ui-view></main>
 

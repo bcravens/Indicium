@@ -15,7 +15,7 @@
       $stateProvider
       .state("index", {
         url: "/",
-        templateUrl: "/js/ng-views/index.html",
+        templateUrl: "index.html",
         controller: "IndexController",
         controllerAs: "vm"
       })

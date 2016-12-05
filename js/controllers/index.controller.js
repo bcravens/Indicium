@@ -10,6 +10,7 @@
 
   function IndexController($state){
     this.addSearch = function () {
+      console.log("addsearch running")
       let search = this.newSearch
       $state.go("show", {search});
   }
