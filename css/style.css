@@ -2,16 +2,6 @@ html,body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
-}
-body {
-  /*background: url("https://static.pexels.com/photos/30975/pexels-photo-30975.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 button {
   width: 100px;
@@ -35,25 +25,64 @@ button:active {
     text-decoration: none;
 }
 button:focus {outline: none;}
+
 input {
-  margin: 5px 0 20px 0;
-  padding: 10px;
-  border: solid 1px black;
-  width: 200px;
+  color: tomato;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 20px;
+  font-size: 4em;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
 }
-ul {
+::-webkit-input-placeholder {
+   color: tomato;
+}
+#content {
+  height: 100%;
+  width: 100%;
+}
+main {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-li {
-  list-style: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
-.header {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-height: 60px;
-width: 100%;
-background-color: lemonchiffon;
+#logo, img {
+  margin: 20px;
+  height: 200px;
+  width: auto;
+}
+
+#logo {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  /*background-color: blue;*/
+  justify-content: center;
+}
+
+#searchbox {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  /*background-color: green;*/
+  justify-content: center;
+  align-items: center;
+}
+
+#brand {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  /*background-color: yellow;*/
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,18 @@
+<style>
+  body {
+    background: url("/images/lights.jpeg");
+  }
+</style>
+<div id="content">
+  <div id="logo">
+    <img src="/images/moose.png" alt="logo">
+  </div>
+  <div id="searchbox">
+  <form id="textbox" ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
+    <input ng-model="vm.newSearch" placeholder="SEARCH..." type="text" >
+  </form>
+  </div>
+  <div id="brand">
+    <!-- Search Dope Shit -->
+  </div>
+</div>

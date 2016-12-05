@@ -7,17 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
-      <div ng-controller="IndexController as vm">
-        <input ng-model="vm.newSearch">
-        <button ng-click="vm.addSearch()">Search</button>
-      </div>
 
     <main data-ui-view></main>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -26,6 +23,7 @@
     <script src="js/controllers/show.controller.js"></script>
     <script src="js/factories/searchfactory.js"></script>
     <script src="js/factories/tweetfactory.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
