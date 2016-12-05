@@ -10,8 +10,14 @@
   ]);
 
   function ShowController($stateParams, TweetFactory){
-    this.tweets = TweetFactory.query({search: $stateParams.search});
-    console.log(this.tweets);
+
+    this.response = TweetFactory.get({search: $stateParams.search});
+
+    this.response.$promise.then((data) => {
+      this.sentiment = data.sentiment;
+      this.tweets = data.tweets
+
+    })
   }
 
 }());
