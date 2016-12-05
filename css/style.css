@@ -2,16 +2,16 @@ html,body {
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 body {
-  background: url("https://static.pexels.com/photos/30975/pexels-photo-30975.jpg");
+  /*background: url("https://static.pexels.com/photos/30975/pexels-photo-30975.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 button {
   width: 100px;
@@ -40,4 +40,13 @@ input {
   padding: 10px;
   border: solid 1px black;
   width: 200px;
+}
+
+.header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 60px;
+width: 100%;
+background-color: lemonchiffon;
 }
