@@ -5,13 +5,18 @@
   .module("indicium")
   .controller("IndexController", [
     "$state",
+    "SearchFactory",
     IndexController
   ]);
 
-  function IndexController($state){
+  function IndexController($state, SearchFactory){
+
     this.addSearch = function () {
-      console.log("addsearch running")
       let search = this.newSearch
+
+      var newSearch = new SearchFactory({body: search})
+      newSearch.$save();
+
       $state.go("show", {search});
   }
 

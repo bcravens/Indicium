@@ -9,7 +9,7 @@
   ]);
 
   function SearchFactoryFunction($resource){
-    return $resource("http://localhost:4000/searches", {}, {
+    return $resource("http://localhost:4000/api/searches", {}, {
       update: {method: "PUT"}
     });
   }
