@@ -9,14 +9,10 @@
 <h2>{{vm.sentiment.label}}</h2>
 <h1>Tweets:</h1>
 <div data-ng-repeat="tweet in vm.tweets" style="width: 30vw">
+  <h5>{{tweet.username}}</h5>
   <p>{{tweet.body}}</p>
-  <div>
-    <ul>
-      <li><a href="#">test</a></li>
-      <li><a href="#">test</a></li>
-      <li><a href="#">test</a></li>
-      <li><a href="#">test</a></li>
-    </ul>
-  </div>
+  <p>{{tweet.longitude}}</p>
+  <p>{{tweet.latitude}}</p>
+  <p>{{tweet.country}}</p>
   <hr>
 </div>
