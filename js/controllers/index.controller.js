@@ -4,7 +4,7 @@
   angular
   .module("indicium")
   .controller("IndexController", [
-    "TweetFactory",
+    "$state",
     IndexController
   ]);
 
@@ -19,13 +19,10 @@
   //
   // }
 
-  function IndexController(TweetFactory){
-    this.tweets = TweetFactory.query();
+  function IndexController($state){
     this.addSearch = function () {
-      let search = {body: this.newSearch}
-      var url = "http://localhost:8080/#/tweets/" + search.body
-      console.log(url)
-      window.location = url
+      let search = this.newSearch
+      $state.go("show", {search});
   }
 
 }

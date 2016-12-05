@@ -8,6 +8,7 @@ html,body {
 }
 body {
   background: url("https://static.pexels.com/photos/30975/pexels-photo-30975.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

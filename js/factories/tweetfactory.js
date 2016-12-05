@@ -9,7 +9,7 @@
   ]);
 
   function TweetFactoryFunction($resource){
-    return $resource("http://localhost:4000/api/tweets/:search", { search: '@search'}, {
+  return $resource("http://localhost:4000/api/tweets/:search", {}, {
       update: {method: "PUT"}
     });
   }
