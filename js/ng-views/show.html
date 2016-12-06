@@ -37,7 +37,9 @@
 <br>
 <h1>Sample Tweets...</h1><br>
   <div data-ng-repeat="tweet in vm.tweets">
-    <h4>{{tweet.userName}}: {{tweet.text}}</h4>
+    <h3>{{tweet.userName}}: <h3>
+    <h4>{{tweet.text}}</h4>
+    <h5>Retweets: {{tweet.retweets}} | Favorites: {{tweet.favorites}} | {{tweet.createdAt}}</h5>
     <hr>
   </div>
 
