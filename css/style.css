@@ -29,25 +29,24 @@ button:active {
 }
 button:focus {outline: none;}
 
-input {
+input[type="text"] {
   color: black;
   background: transparent;
   border: none;
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 20px;
-  font-size: 4em;
-  border-radius: 5px;
+  font-size: 5em;
   padding: 20px;
   width: 900px;
   text-align:center;
 }
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
 ::-webkit-input-placeholder {
    color: black;
    text-align: center;
-}
-input:focus::-webkit-input-placeholder {
-    opacity: 0;
 }
 main {
   height: 100%;
