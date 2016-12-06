@@ -4,7 +4,8 @@
   angular
     .module('indicium', [
       "ui.router",
-      "ngResource"
+      "ngResource",
+      "ui.bootstrap"
     ])
     .config([
       "$stateProvider",

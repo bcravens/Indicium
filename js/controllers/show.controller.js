@@ -11,13 +11,13 @@
 
   function ShowController($stateParams, TweetFactory){
 
-    this.response = TweetFactory.get({search: $stateParams.search});
-
-    this.response.$promise.then((data) => {
-      this.sentiment = data.sentiment;
-      this.tweets = data.tweets
-  
-    })
+    // this.response = TweetFactory.get({search: $stateParams.search});
+    //
+    // this.response.$promise.then((data) => {
+    //   this.sentiment = data.sentiment;
+    //   this.tweets = data.tweets
+    //
+    // })
   }
 
 }());

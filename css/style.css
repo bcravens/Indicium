@@ -3,6 +3,9 @@ html,body {
   margin: 0;
   padding: 0;
 }
+body {
+  background: url("/images/background.jpeg");
+}
 button {
   width: 100px;
   padding: 10px 15px;
@@ -27,62 +30,44 @@ button:active {
 button:focus {outline: none;}
 
 input {
-  color: tomato;
+  color: black;
   background: transparent;
   border: none;
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 20px;
   font-size: 4em;
-  border: 2px solid tomato;
   border-radius: 5px;
   padding: 20px;
-  width: 500px;
+  width: 900px;
+  text-align:center;
 }
 ::-webkit-input-placeholder {
-   color: tomato;
+   color: black;
+   text-align: center;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+main {
+  height: 100%;
 }
 #content {
   height: 100%;
   width: 100%;
-}
-main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
 }
 
 #logo, img {
-  margin: 20px;
-  height: 200px;
+  height: 150px;
   width: auto;
+  margin-top: 20px;
 }
-
-#logo {
-  display: flex;
-  height: 200px;
-  width: 100%;
-  /*background-color: blue;*/
-  justify-content: center;
-}
-
-#searchbox {
-  display: flex;
-  height: 200px;
-  width: 100%;
-  /*background-color: green;*/
-  justify-content: center;
-  align-items: center;
-}
-
 #brand {
-  display: flex;
-  height: 200px;
-  width: 100%;
-  /*background-color: yellow;*/
-  justify-content: center;
-  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 20px;
+  color: white;
 }
