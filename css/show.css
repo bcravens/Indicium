@@ -1,0 +1,31 @@
+/*NAV BAR*/
+#shownav {
+  display: flex;
+  height: 90px;
+  flex-direction: row;
+  background-color: rgba(0,0,0,.2);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#showlogo img {
+  height: 70px;
+  width: auto;
+  margin-left: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#showsearch {
+  margin-right: 1.5rem;
+}
+
+#showsearch input{
+  width: 200px;
+  border: 1px black solid;
+}
+
+#showsearchbutton {
+  color: white;
+  background: black;
+  border: none;
+}
