@@ -2,7 +2,7 @@
 
   <div id="shownav">
     <div id="showlogo">
-      <img src="/images/moose.png" alt="logo">
+      <a data-ui-sref="index"><img src="/images/moose.png" alt="logo"></a>
     </div>
   </div>
 
@@ -13,12 +13,32 @@
     </div>
   </div>
 
-  <div id="showcontent">
+  <!-- <div id="showcontent">
     <div id="sentiment">Sentiment</div>
     <div id="entities">Entities</div>
     <div id="categories">Categories</div>
     <div id="emotion">Emotion</div>
     <div id="keywords">Keyword</div>
+  </div> -->
+<section style="width: 70vm; margin: 0 auto; padding: 0 200px">
+
+<div style="text-align: center">
+  <h1>Sentiment Analyis:</h1>
+
+  <h2>{{vm.sentiment.docSentiment.type}}</h2>
+  <h2>{{vm.sentiment.docSentiment.score}}</h2>
+  <br>
+  <h3>Anger: {{vm.anger}}</h3>
+  <h3>Disgust: {{vm.disgust}}</h3>
+  <h3>Fear: {{vm.fear}}</h3>
+  <h3>Joy: {{vm.joy}}</h3>
+  <h3>Sadness: {{vm.sadness}}</h3>
+</div>
+<br>
+<h1>Sample Tweets...</h1><br>
+  <div data-ng-repeat="tweet in vm.tweets">
+    <h4>{{tweet.userName}}: {{tweet.text}}</h4>
+    <hr>
   </div>
 
-</div>
+</section>
