@@ -6,6 +6,7 @@
   background-color: rgba(0,0,0,.2);
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px solid black;
 }
 
 #showlogo img {
@@ -21,11 +22,55 @@
 
 #showsearch input{
   width: 200px;
+  height: 40px;
   border: 1px black solid;
+  border-radius: 5px
 }
 
 #showsearchbutton {
   color: white;
   background: black;
   border: none;
+}
+#showpage {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+#showcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89%;
+  width: 100%;
+}
+#sentiment {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}
+#entities {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}
+#categories {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}
+#keywords {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}
+#emotion {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 5px;
 }
