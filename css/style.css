@@ -22,10 +22,7 @@ input[type="text"] {
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
-::-webkit-input-placeholder {
-   color: black;
-   text-align: center;
-}
+
 main {
   height: 100%;
 }

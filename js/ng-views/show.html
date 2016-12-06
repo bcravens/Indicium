@@ -4,12 +4,13 @@
     <div id="showlogo">
       <a data-ui-sref="index"><img src="/images/moose.png" alt="logo"></a>
     </div>
+    <h1>INDICIUM</h1>
   </div>
 
   <div id = "searchContainer">
     <div ng-controller="IndexController as vm">
-      <input id= "search" ng-model="vm.newSearch">
-      <img src="" alt="input_img">
+      <img id= "searchImage" src="/images/search.png" alt="input_img">
+      <input id= "search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics...">
     </div>
   </div>
 
