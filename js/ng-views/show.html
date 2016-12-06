@@ -1,6 +1,14 @@
-<div ng-controller="IndexController as vm">
-  <input ng-model="vm.newSearch">
-  <button ng-click="vm.addSearch()">Search</button>
+<div id="shownav">
+  <div id="showlogo">
+    <img src="/images/moose.png" alt="logo">
+  </div>
+
+
+  <div id="showsearch" ng-controller="IndexController as vm">
+    <input ng-model="vm.newSearch">
+    <button id="showsearchbutton" ng-click="vm.addSearch()">Search</button>
+  </div>
+
 </div>
 
 <h2>These are all the Tweets</h2>
