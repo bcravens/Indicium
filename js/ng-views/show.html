@@ -1,15 +1,16 @@
 <div id="showpage">
+
   <div id="shownav">
     <div id="showlogo">
       <img src="/images/moose.png" alt="logo">
     </div>
+  </div>
 
-
-    <div id="showsearch" ng-controller="IndexController as vm">
-      <input ng-model="vm.newSearch">
-      <button id="showsearchbutton" ng-click="vm.addSearch()">Search</button>
+  <div id = "searchContainer">
+    <div ng-controller="IndexController as vm">
+      <input id= "search" ng-model="vm.newSearch">
+      <img src="" alt="input_img">
     </div>
-
   </div>
 
   <div id="showcontent">
