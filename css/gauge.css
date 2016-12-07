@@ -1,0 +1,90 @@
+#charts {
+  max-width: 600px;
+  border: 1px solid purple;
+}
+li {
+	list-style-type: none;
+  border: 1px solid red;
+  min-width: 400px;
+
+}
+progress[value] {
+  width: 100%; height: 20px;
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	margin: 0 0 .5em;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+progress[value]::-webkit-progress-value {
+	border-radius:3px;
+}
+.anger::-webkit-progress-value {
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 66%,
+													 rgba(0,0,0,.1) 33%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #ff9e9e, #e84214);
+}
+.disgust::-webkit-progress-value {
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #ceff9e, #4cd132);
+}
+.fear::-webkit-progress-value {
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #ffdfad, #ff9d00);
+}
+.joy::-webkit-progress-value {
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #fffd8c, #fffa00);
+}
+.sadness::-webkit-progress-value {
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #c1d7ff, #4563a0);
+}

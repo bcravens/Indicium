@@ -5,7 +5,7 @@
       <a data-ui-sref="index"><img src="/images/moose.png" alt="logo"></a>
       <h1>INDICIUM</h1>
     </div>
-    
+
   </div>
 
   <div id = "searchContainer">
@@ -27,57 +27,36 @@
 
     <div id="charts">
       <span class='first'>Emotion</span>
-      <div class="timeline">
+      <div class="timeline1">
+        <ul id="chartContainer">
+        	<li>
+            <h4>Anger: {{vm.anger}}</h4>
+        		<progress max="100" value="{{vm.angerNum}}" class="anger">
+        			<div class="progress-bar"></div>
+        		</progress>
+            <h4>Disgust: {{vm.disgust}}</h4>
+            <progress max="100" value="{{vm.disgustNum}}" class="disgust">
+              <div class="progress-bar"></div>
+            </progress>
+            <h4>Fear: {{vm.fear}}</h4>
+            <progress max="100" value="{{vm.fearNum}}" class="fear">
+              <div class="progress-bar"></div>
+            </progress>
+            <h4>Joy: {{vm.joy}}</h4>
+            <progress max="100" value="{{vm.joyNum}}" class="joy">
+              <div class="progress-bar"></div>
+            </progress>
+            <h4>Sadness: {{vm.sadness}}</h4>
+            <progress max="100" value="{{vm.sadnessNum}}" class="sadness">
+              <div class="progress-bar"></div>
+            </progress>
+        	</li>
+        </ul>
 
-
-        <h4>Anger</h4>
-        <div class="c100 red p{{vm.angerNum}}">
-          <span>{{vm.anger}}</span>
-          <div class="slice">
-            <div class="bar"></div>
-            <div class="fill"></div>
-          </div>
-        </div>
-
-        <h4>Disgust</h4>
-        <div class="c100 orange p{{vm.disgustNum}}">
-          <span>{{vm.disgust}}</span>
-          <div class="slice">
-            <div class="bar"></div>
-            <div class="fill"></div>
-          </div>
-        </div>
-
-        <h4>Fear</h4>
-        <div class="c100 rebeccapurple p{{vm.fearNum}}">
-          <span>{{vm.fear}}</span>
-          <div class="slice">
-            <div class="bar"></div>
-            <div class="fill"></div>
-          </div>
-        </div>
-
-        <h4>Joy</h4>
-        <div class="c100 green p{{vm.joyNum}}">
-          <span>{{vm.joy}}</span>
-          <div class="slice">
-            <div class="bar"></div>
-            <div class="fill"></div>
-          </div>
-        </div>
-
-        <h4>Sadness</h4>
-        <div class="c100 p{{vm.sadnessNum}}">
-          <span>{{vm.sadness}}</span>
-          <div class="slice">
-            <div class="bar"></div>
-            <div class="fill"></div>
-          </div>
-        </div>
       </div>
     </div>
 
-    <div>
+    <div id="tweets">
       <span class="first">Sample Tweets</span>
       <ul class="timeline" >
         <li data-ng-repeat="tweet in vm.tweets">
@@ -94,16 +73,16 @@
       </ul>
     </div>
 
-    <div class="timeline">
-      <span class='first'>Related Categories</span>
-      <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
+    <div class="timeline2">
+      <span class='first2'>Related Categories</span>
+        <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
         <ul>
           <li>{{concept.text}}</li>
           <li>Relevance (Range of 0-1): {{concept.relevance}}</li>
         </ul>
-        <hr>
       </div>
     </div>
 
   </div>
+
 </div>
