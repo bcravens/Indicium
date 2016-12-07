@@ -74,5 +74,16 @@
       	</ul>
     </div>
 
+<div class="timeline">
+    <span class='first'>Related Categories</span>
+    <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
+    <ul>
+      <li>{{concept.text}}</li>
+      <li>Relevance (Range of 0-1): {{concept.relevance}}</li>
+    </ul>
+    <hr>
+  </div>
+</div>
+
   </div>
 </div>
