@@ -24,6 +24,10 @@
         templateUrl: "/js/ng-views/show.html",
         controller: "ShowController",
         controllerAs: "vm"
+      })
+      .state("gauge", {
+        url: "/gauge",
+        templateUrl: "/js/ng-views/gauge.html",
       });
     }
 }());

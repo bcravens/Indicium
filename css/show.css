@@ -1,5 +1,5 @@
 /*NAV BAR*/
-#shownav {
+/*#shownav {
   display: flex;
   height: 150px;
   flex-direction: row;
@@ -119,4 +119,4 @@ input:focus {
   width: 100px;
   border: 1px solid black;
   margin: 5px;
-}
+}*/

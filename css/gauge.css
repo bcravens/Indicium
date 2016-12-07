@@ -1,180 +1,66 @@
-/*! FILE: sass/screen.scss */
-/* line 5, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+@import url(http://fonts.googleapis.com/css?family=Share+Tech);
 
-/* line 22, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 9, ../sass/screen.scss */
 body {
-  background-color: #1d2225;
-  text-align: center;
-  padding-top: 5em;
+  background: #efefef;
 }
 
-/* line 14, ../sass/screen.scss */
-.pie {
-  display: inline-block;
+.container {
+  width: 400px;
+  height: 200px;
   position: relative;
-  width: 1em;
-  height: 1em;
-  background-color: #2f3e46;
-  font-size: 7em;
+  margin: auto;
+  font-family: 'Share Tech', sans-serif;
+  color: #444;
+}
+
+#percent, #svg {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#percent {
+  line-height: 20px;
+  height: 20px;
+  width 100%;
+  top: 90px;
+  font-size: 43px;
   text-align: center;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  color: #3da08d;
+  opacity: 0.8
 }
 
-/* line 24, ../sass/screen.scss */
-.slice-right {
-  position: absolute;
-  z-index: 11;
-  background-color: #ff913b;
-  width: 100%;
-  height: 100%;
-  clip: rect(0, 0.5em, 0.5em, 0.5em);
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+p, .btn {
+  position: relative;
+  left: 220px;
+  width: 200px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  top: 30px;
 }
 
-/* line 33, ../sass/screen.scss */
-.slice-left {
-  position: absolute;
-  z-index: 11;
-  background-color: #ff913b;
-  width: 100%;
-  height: 100%;
-  clip: rect(0.5em, 0.5em, 1em, 0.5em);
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.btn {
+  text-align: center;
+  background: #5fc2af;
+  color: #fff;
+  width: 120px;
+  height: 37px;
+  line-height: 37px;
+  cursor: pointer;
 }
 
-/* line 42, ../sass/screen.scss */
-.percent {
-  position: absolute;
-  z-index: 20;
-  top: 3px;
-  right: 3px;
-  bottom: 3px;
-  left: 3px;
-  background: #1d2225;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #eee;
+  width: 30px;
+  font-family: helvetica;
+  font-size: 24px;
+  text-transform: capitalise;
+  font-family: 'Share Tech', sans-serif;
+  background: transparent;
 
-/* line 52, ../sass/screen.scss */
-.number {
-  position: absolute;
-  z-index: 30;
-  width: 100%;
-  height: 100%;
-  padding-top: 50%;
-  line-height: 0;
-  font-size: .3em;
-  color: #485c65;
-}
-
-/* line 64, ../sass/screen.scss */
-.slice-right {
-  -webkit-animation-delay: 1.2s;
-  -webkit-animation-duration: 0.3s;
-  -webkit-animation-name: right-slice;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-}
-
-/* line 72, ../sass/screen.scss */
-.slice-left {
-  -webkit-animation-delay: 1.5s;
-  -webkit-animation-duration: 0.3s;
-  -webkit-animation-name: left-slice;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes right-slice {
-  from {
-    clip: rect(0, 50%, 0.5em, 0.5em);
-  }
-  50% {
-    clip: rect(0, 1em, 0.5em, 0.5em);
-  }
-  to {
-    clip: rect(0, 1em, 1em, 0.5em);
-  }
-}
-@-webkit-keyframes left-slice {
-  from {
-    clip: rect(0.5em, 0.5em, 1em, 0.5em);
-  }
-  50% {
-    clip: rect(0.5em, 0.5em, 1em, 0);
-  }
-  to {
-    clip: rect(0.3em, 0.5em, 1em, 0);
-  }
 }
