@@ -1,5 +1,6 @@
 #charts {
   max-width: 600px;
+  min-width: 600px;
 }
 li {
 	list-style-type: none;

@@ -83,12 +83,12 @@ input:focus {
     outline-width: 0;
 }
 
-#showcontent {
+#showContent {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 89%;
+  height: 60%;
   width: 100%;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 #sentiment {
   height: 100px;

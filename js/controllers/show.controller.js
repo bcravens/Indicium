@@ -21,6 +21,7 @@
       this.joy = Math.round((parseFloat(this.sentiment.docEmotions.joy) * 100)) + "%"
       this.sadness = Math.round((parseFloat(this.sentiment.docEmotions.sadness) * 100)) + "%"
     })
+
   }
 
 }());

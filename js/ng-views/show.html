@@ -17,52 +17,50 @@
     </div>
   </div>
 
-<div id="charts">
-  <ul>
-  	<li>
-      <p>Anger</p>
-  		<progress max="100" value="80" class="anger">
-  			<div class="progress-bar"></div>
-  		</progress>
-      <p>Disgust</p>
-      <progress max="100" value="70" class="disgust">
-        <div class="progress-bar"></div>
-      </progress>
-      <p>Fear</p>
-      <progress max="100" value="90" class="fear">
-        <div class="progress-bar"></div>
-      </progress>
-      <p>Joy</p>
-      <progress max="100" value="75" class="joy">
-        <div class="progress-bar"></div>
-      </progress>
-      <p>Sadness</p>
-      <progress max="100" value="85" class="sadness">
-        <div class="progress-bar"></div>
-      </progress>
-  	</li>
-  </ul>
-</div>
+  <div id="showContent">
+    <div id="charts">
+      <ul>
+      	<li>
+          <p>Anger</p>
+      		<progress max="100" value="80" class="anger">
+      			<div class="progress-bar"></div>
+      		</progress>
+          <p>Disgust</p>
+          <progress max="100" value="70" class="disgust">
+            <div class="progress-bar"></div>
+          </progress>
+          <p>Fear</p>
+          <progress max="100" value="90" class="fear">
+            <div class="progress-bar"></div>
+          </progress>
+          <p>Joy</p>
+          <progress max="100" value="75" class="joy">
+            <div class="progress-bar"></div>
+          </progress>
+          <p>Sadness</p>
+          <progress max="100" value="85" class="sadness">
+            <div class="progress-bar"></div>
+          </progress>
+      	</li>
+      </ul>
+    </div>
 
-<div style="text-align: center">
-  <h1>Sentiment Analyis:</h1>
+    <div>
+      <span class="first">Sample Tweets</span>
+      	<ul class="timeline" >
+      		<li data-ng-repeat="tweet in vm.tweets">
+      			<div class="avatar">
+              <img ng-src="{{tweet.img_url}}">
+      			</div>
+      			<div class="bubble-container">
+      				<div class="bubble">
+      					<h3>@{{tweet.userName}}</h3><br/>
+              {{tweet.text}}
+              </div>
+      			</div>
+      		</li>
+      	</ul>
+    </div>
 
-  <h2>{{vm.sentiment.docSentiment.type}}</h2>
-  <h2>{{vm.sentiment.docSentiment.score}}</h2>
-  <br>
-  <h3>Anger: {{vm.anger}}</h3>
-  <h3>Disgust: {{vm.disgust}}</h3>
-  <h3>Fear: {{vm.fear}}</h3>
-  <h3>Joy: {{vm.joy}}</h3>
-  <h3>Sadness: {{vm.sadness}}</h3>
-</div>
-<br>
-<h1>Sample Tweets...</h1><br>
-  <div data-ng-repeat="tweet in vm.tweets">
-    <h3>{{tweet.userName}}: <h3>
-    <h4>{{tweet.text}}</h4>
-    <h5>Retweets: {{tweet.retweets}} | Favorites: {{tweet.favorites}} | {{tweet.createdAt}}</h5>
-    <hr>
   </div>
-
-</section>
+</div>
