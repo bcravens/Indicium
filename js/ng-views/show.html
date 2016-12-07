@@ -17,55 +17,8 @@
     </div>
   </div>
 
-  <!-- <div id="showcontent">
-    <div id="sentiment">Sentiment</div>
-    <div id="entities">Entities</div>
-    <div id="categories">Categories</div>
-    <div id="emotion">Emotion</div>
-    <div id="keywords">Keyword</div>
-  </div> -->
 <section style="width: 70vm; margin: 0 auto; padding: 0 200px">
 
-
-  <div class="pie">
-    <div class="slice-right"></div>
-    <div class="slice-left"></div>
-    <div class="percent">
-      <div class="number">{{vm.anger}}</div>
-    </div>
-  </div>
-
-  <div class="pie">
-    <div class="slice-right"></div>
-    <div class="slice-left"></div>
-    <div class="percent">
-      <div class="number">75%</div>
-    </div>
-  </div>
-
-  <div class="pie">
-    <div class="slice-right"></div>
-    <div class="slice-left"></div>
-    <div class="percent">
-      <div class="number">75%</div>
-    </div>
-  </div>
-
-  <div class="pie">
-    <div class="slice-right"></div>
-    <div class="slice-left"></div>
-    <div class="percent">
-      <div class="number">75%</div>
-    </div>
-  </div>
-
-  <div class="pie">
-    <div class="slice-right"></div>
-    <div class="slice-left"></div>
-    <div class="percent">
-      <div class="number">75%</div>
-    </div>
-  </div>
 
 <div style="text-align: center">
   <h1>Sentiment Analyis:</h1>
@@ -80,12 +33,40 @@
   <h3>Sadness: {{vm.sadness}}</h3>
 </div>
 <br>
-<h1>Sample Tweets...</h1><br>
+
+
+<span class="first">
+Sample Tweets
+		</span>
+		<ul class="timeline" >
+			<li data-ng-repeat="tweet in vm.tweets">
+				<div class="avatar">
+          <img ng-src="{{tweet.img_url}}">
+
+				</div>
+				<div class="bubble-container">
+					<div class="bubble">
+
+						<h3>@{{tweet.userName}}</h3><br/>
+          {{tweet.text}}
+          </div>
+
+				</div>
+			</li>
+
+		</ul>
+
+
+
+
+
+<!-- <h1>Sample Tweets...</h1><br>
   <div data-ng-repeat="tweet in vm.tweets">
     <h3>{{tweet.userName}}: <h3>
     <h4>{{tweet.text}}</h4>
     <h5>Retweets: {{tweet.retweets}} | Favorites: {{tweet.favorites}} | {{tweet.createdAt}}</h5>
     <hr>
-  </div>
+  </div> -->
+
 
 </section>
