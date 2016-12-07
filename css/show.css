@@ -87,8 +87,9 @@ input:focus {
   display: flex;
   height: 60%;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-right: 30px;
+  flex-wrap: wrap;
 }
 #sentiment {
   height: 100px;
