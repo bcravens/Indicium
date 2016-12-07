@@ -5,20 +5,18 @@
       <a data-ui-sref="index"><img src="/images/moose.png" alt="logo"></a>
       <h1>INDICIUM</h1>
     </div>
-    <div id="links">
-      <div id="about">About</div>
-    </div>
+
   </div>
 
   <div id = "searchContainer">
     <div ng-controller="IndexController as vm">
 
 
-    <div id= "searchContainer">
-      <form ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
-        <input id="search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics..." type="text" >
-      </form>
-    </div>
+      <div id= "searchContainer">
+        <form ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
+          <input id="search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics..." type="text" >
+        </form>
+      </div>
 
 
 
@@ -54,24 +52,25 @@
             </progress>
         	</li>
         </ul>
+
       </div>
     </div>
 
     <div id="tweets">
       <span class="first">Sample Tweets</span>
-      	<ul class="timeline" >
-      		<li data-ng-repeat="tweet in vm.tweets">
-      			<div class="avatar">
-              <img ng-src="{{tweet.img_url}}">
-      			</div>
-      			<div class="bubble-container">
-      				<div class="bubble">
-      					<h3>@{{tweet.userName}}</h3><br/>
+      <ul class="timeline" >
+        <li data-ng-repeat="tweet in vm.tweets">
+          <div class="avatar">
+            <img ng-src="{{tweet.img_url}}">
+          </div>
+          <div class="bubble-container">
+            <div class="bubble">
+              <h3>@{{tweet.userName}}</h3><br/>
               {{tweet.text}}
-              </div>
-      			</div>
-      		</li>
-      	</ul>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <div class="timeline2">
