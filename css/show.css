@@ -33,18 +33,7 @@
   margin-right: 1.5rem;
 }
 
-#showsearch input{
-  width: 200px;
-  height: 40px;
-  border: 1px black solid;
-  border-radius: 5px
-}
 
-#showsearchbutton {
-  color: white;
-  background: black;
-  border: none;
-}
 #showpage {
   width: 100%;
   height: 100%;
@@ -76,8 +65,11 @@
   border-radius: 5px;
   height: 35px;
   width: 800px;
-  margin-left: -7px;
+  /*margin-left: -7px;*/
   padding-left: 0px;
+  font-size: 25px;
+  letter-spacing: 0px;
+
 }
 input:focus {
     outline-width: 0;
