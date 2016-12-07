@@ -1,16 +1,18 @@
 #charts {
   max-width: 600px;
-  min-width: 600px;
+  border: 1px solid purple;
 }
 li {
 	list-style-type: none;
+  border: 1px solid red;
+  min-width: 400px;
+
 }
 progress[value] {
   width: 100%; height: 20px;
 	background-color: whiteSmoke;
 	border-radius: 3px;
 	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-  position: relative;
 	margin: 0 0 .5em;
 }
 progress[value]::-webkit-progress-bar {

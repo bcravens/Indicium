@@ -27,37 +27,37 @@
 
   <div id="showContent">
 
-  <div id="charts">
-    <span class='first'>Emotion</span>
-    <div class="timeline">
-      <ul>
-      	<li style="text-align: center">
-          <h4>Anger: {{vm.anger}}</h4>
-      		<progress max="100" value="{{vm.angerNum}}" class="anger">
-      			<div class="progress-bar"></div>
-      		</progress>
-          <h4>Disgust: {{vm.disgust}}</h4>
-          <progress max="100" value="{{vm.disgustNum}}" class="disgust">
-            <div class="progress-bar"></div>
-          </progress>
-          <h4>Fear: {{vm.fear}}</h4>
-          <progress max="100" value="{{vm.fearNum}}" class="fear">
-            <div class="progress-bar"></div>
-          </progress>
-          <h4>Joy: {{vm.joy}}</h4>
-          <progress max="100" value="{{vm.joyNum}}" class="joy">
-            <div class="progress-bar"></div>
-          </progress>
-          <h4>Sadness: {{vm.sadness}}</h4>
-          <progress max="100" value="{{vm.sadnessNum}}" class="sadness">
-            <div class="progress-bar"></div>
-          </progress>
-      	</li>
-      </ul>
-    </div>
+    <div id="charts">
+      <span class='first'>Emotion</span>
+      <div class="timeline1">
+        <ul id="chartContainer">
+        	<li>
+            <h4>Anger: {{vm.anger}}</h4>
+        		<progress max="100" value="{{vm.angerNum}}" class="anger">
+        			<div class="progress-bar"></div>
+        		</progress>
+            <h4>Disgust: {{vm.disgust}}</h4>
+            <progress max="100" value="{{vm.disgustNum}}" class="disgust">
+              <div class="progress-bar"></div>
+            </progress>
+            <h4>Fear: {{vm.fear}}</h4>
+            <progress max="100" value="{{vm.fearNum}}" class="fear">
+              <div class="progress-bar"></div>
+            </progress>
+            <h4>Joy: {{vm.joy}}</h4>
+            <progress max="100" value="{{vm.joyNum}}" class="joy">
+              <div class="progress-bar"></div>
+            </progress>
+            <h4>Sadness: {{vm.sadness}}</h4>
+            <progress max="100" value="{{vm.sadnessNum}}" class="sadness">
+              <div class="progress-bar"></div>
+            </progress>
+        	</li>
+        </ul>
+      </div>
     </div>
 
-    <div>
+    <div id="tweets">
       <span class="first">Sample Tweets</span>
       	<ul class="timeline" >
       		<li data-ng-repeat="tweet in vm.tweets">
@@ -74,16 +74,16 @@
       	</ul>
     </div>
 
-<div class="timeline">
-    <span class='first'>Related Categories</span>
-    <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
-    <ul>
-      <li>{{concept.text}}</li>
-      <li>Relevance (Range of 0-1): {{concept.relevance}}</li>
-    </ul>
-    <hr>
-  </div>
-</div>
+    <div class="timeline2">
+      <span class='first2'>Related Categories</span>
+        <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
+        <ul>
+          <li>{{concept.text}}</li>
+          <li>Relevance (Range of 0-1): {{concept.relevance}}</li>
+        </ul>
+      </div>
+    </div>
 
   </div>
+
 </div>
