@@ -20,6 +20,12 @@
       this.fear = Math.round((parseFloat(this.sentiment.docEmotions.fear) * 100)) + "%"
       this.joy = Math.round((parseFloat(this.sentiment.docEmotions.joy) * 100)) + "%"
       this.sadness = Math.round((parseFloat(this.sentiment.docEmotions.sadness) * 100)) + "%"
+
+      this.angerNum = parseInt(this.anger)
+      this.disgustNum = parseInt(this.disgust)
+      this.fearNum = parseInt(this.fear)
+      this.joyNum = parseInt(this.joy)
+      this.sadnessNum = parseInt(this.sadness)
     })
 
   }

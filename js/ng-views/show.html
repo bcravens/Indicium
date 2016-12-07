@@ -12,8 +12,16 @@
 
   <div id = "searchContainer">
     <div ng-controller="IndexController as vm">
-      <img id= "searchImage" src="/images/search.png" alt="input_img">
-      <input id= "search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics...">
+
+
+    <div id= "searchContainer">
+      <form ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
+        <input id="search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics..." type="text" >
+      </form>
+    </div>
+
+
+
     </div>
   </div>
 
@@ -23,25 +31,25 @@
     <span class='first'>Emotion</span>
     <div class="timeline">
       <ul>
-      	<li>
-          <p>Anger</p>
-      		<progress max="100" value="80" class="anger">
+      	<li style="text-align: center">
+          <h4>Anger: {{vm.anger}}</h4>
+      		<progress max="100" value="{{vm.angerNum}}" class="anger">
       			<div class="progress-bar"></div>
       		</progress>
-          <p>Disgust</p>
-          <progress max="100" value="70" class="disgust">
+          <h4>Disgust: {{vm.disgust}}</h4>
+          <progress max="100" value="{{vm.disgustNum}}" class="disgust">
             <div class="progress-bar"></div>
           </progress>
-          <p>Fear</p>
-          <progress max="100" value="90" class="fear">
+          <h4>Fear: {{vm.fear}}</h4>
+          <progress max="100" value="{{vm.fearNum}}" class="fear">
             <div class="progress-bar"></div>
           </progress>
-          <p>Joy</p>
-          <progress max="100" value="75" class="joy">
+          <h4>Joy: {{vm.joy}}</h4>
+          <progress max="100" value="{{vm.joyNum}}" class="joy">
             <div class="progress-bar"></div>
           </progress>
-          <p>Sadness</p>
-          <progress max="100" value="85" class="sadness">
+          <h4>Sadness: {{vm.sadness}}</h4>
+          <progress max="100" value="{{vm.sadnessNum}}" class="sadness">
             <div class="progress-bar"></div>
           </progress>
       	</li>
