@@ -14,11 +14,11 @@
     <div ng-controller="IndexController as vm">
 
 
-    <div id= "searchContainer">
-      <form ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
-        <input id="search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics..." type="text" >
-      </form>
-    </div>
+      <div id= "searchContainer">
+        <form ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
+          <input id="search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics..." type="text" >
+        </form>
+      </div>
 
 
 
@@ -27,63 +27,85 @@
 
   <div id="showContent">
 
-  <div id="charts">
-    <span class='first'>Emotion</span>
-    <div class="timeline">
-      <ul>
-      	<li style="text-align: center">
-          <h4>Anger: {{vm.anger}}</h4>
-      		<progress max="100" value="{{vm.angerNum}}" class="anger">
-      			<div class="progress-bar"></div>
-      		</progress>
-          <h4>Disgust: {{vm.disgust}}</h4>
-          <progress max="100" value="{{vm.disgustNum}}" class="disgust">
-            <div class="progress-bar"></div>
-          </progress>
-          <h4>Fear: {{vm.fear}}</h4>
-          <progress max="100" value="{{vm.fearNum}}" class="fear">
-            <div class="progress-bar"></div>
-          </progress>
-          <h4>Joy: {{vm.joy}}</h4>
-          <progress max="100" value="{{vm.joyNum}}" class="joy">
-            <div class="progress-bar"></div>
-          </progress>
-          <h4>Sadness: {{vm.sadness}}</h4>
-          <progress max="100" value="{{vm.sadnessNum}}" class="sadness">
-            <div class="progress-bar"></div>
-          </progress>
-      	</li>
-      </ul>
-    </div>
+    <div id="charts">
+      <span class='first'>Emotion</span>
+      <div class="timeline">
+
+
+        <h4>Anger</h4>
+        <div class="c100 red p{{vm.angerNum}}">
+          <span>{{vm.anger}}</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <h4>Disgust</h4>
+        <div class="c100 orange p{{vm.disgustNum}}">
+          <span>{{vm.disgust}}</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <h4>Fear</h4>
+        <div class="c100 rebeccapurple p{{vm.fearNum}}">
+          <span>{{vm.fear}}</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <h4>Joy</h4>
+        <div class="c100 green p{{vm.joyNum}}">
+          <span>{{vm.joy}}</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <h4>Sadness</h4>
+        <div class="c100 p{{vm.sadnessNum}}">
+          <span>{{vm.sadness}}</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div>
       <span class="first">Sample Tweets</span>
-      	<ul class="timeline" >
-      		<li data-ng-repeat="tweet in vm.tweets">
-      			<div class="avatar">
-              <img ng-src="{{tweet.img_url}}">
-      			</div>
-      			<div class="bubble-container">
-      				<div class="bubble">
-      					<h3>@{{tweet.userName}}</h3><br/>
+      <ul class="timeline" >
+        <li data-ng-repeat="tweet in vm.tweets">
+          <div class="avatar">
+            <img ng-src="{{tweet.img_url}}">
+          </div>
+          <div class="bubble-container">
+            <div class="bubble">
+              <h3>@{{tweet.userName}}</h3><br/>
               {{tweet.text}}
-              </div>
-      			</div>
-      		</li>
-      	</ul>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
-<div class="timeline">
-    <span class='first'>Related Categories</span>
-    <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
-    <ul>
-      <li>{{concept.text}}</li>
-      <li>Relevance (Range of 0-1): {{concept.relevance}}</li>
-    </ul>
-    <hr>
-  </div>
-</div>
+    <div class="timeline">
+      <span class='first'>Related Categories</span>
+      <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
+        <ul>
+          <li>{{concept.text}}</li>
+          <li>Relevance (Range of 0-1): {{concept.relevance}}</li>
+        </ul>
+        <hr>
+      </div>
+    </div>
 
   </div>
 </div>
