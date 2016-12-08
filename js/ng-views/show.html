@@ -25,39 +25,44 @@
 
   <div id="showContent">
 
+
     <div id="charts">
-      <span class='first'>Emotion</span>
+
+      <div id="what">
+      <span class='first1'>Emotion</span>
       <div class="timeline1">
         <ul id="chartContainer">
         	<li>
-            <h4>Anger: {{vm.anger}}</h4>
+            <h1 id="searchText">Search Term</h1>
+            <h4>Anger {{vm.anger}}</h4>
         		<progress max="100" value="{{vm.angerNum}}" class="anger">
         			<div class="progress-bar"></div>
         		</progress>
-            <h4>Disgust: {{vm.disgust}}</h4>
+            <h4>Disgust {{vm.disgust}}</h4>
             <progress max="100" value="{{vm.disgustNum}}" class="disgust">
               <div class="progress-bar"></div>
             </progress>
-            <h4>Fear: {{vm.fear}}</h4>
+            <h4>Fear {{vm.fear}}</h4>
             <progress max="100" value="{{vm.fearNum}}" class="fear">
               <div class="progress-bar"></div>
             </progress>
-            <h4>Joy: {{vm.joy}}</h4>
+            <h4>Joy {{vm.joy}}</h4>
             <progress max="100" value="{{vm.joyNum}}" class="joy">
               <div class="progress-bar"></div>
             </progress>
-            <h4>Sadness: {{vm.sadness}}</h4>
+            <h4>Sadness {{vm.sadness}}</h4>
             <progress max="100" value="{{vm.sadnessNum}}" class="sadness">
               <div class="progress-bar"></div>
             </progress>
         	</li>
         </ul>
+      </div>
 
       </div>
     </div>
 
     <div id="tweets">
-      <span class="first">Sample Tweets</span>
+      <span class="first">Tweets</span>
       <ul class="timeline" >
         <li data-ng-repeat="tweet in vm.tweets">
           <div class="avatar">
@@ -74,7 +79,7 @@
     </div>
 
     <div class="timeline2">
-      <span class='first2'>Related Categories</span>
+      <span class='first2'>Associations</span>
         <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
         <ul>
           <li>{{concept.text}}</li>

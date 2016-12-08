@@ -52,10 +52,8 @@ body {
   width: 560px;
   display: block;
   overflow: scroll;
-  height: 60vh;
-  margin: auto;
+  height: 92%;
   background-color: #dde1e2;
-  padding-bottom: 2em;
   -webkit-box-shadow: #bdc3c7 0 5px 5px;
   -moz-box-shadow: #bdc3c7 0 5px 5px;
   box-shadow: #bdc3c7 0 5px 5px;
@@ -65,16 +63,26 @@ body {
   -moz-border-radius-bottomright: 8px;
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin-bottom: 2em; }
-  .timeline li {
-    padding: 1em 0; }
-  .timeline li:nth-child(even) {
-    background-color: #d3d7d8; }
+  padding: 0px;
+}
+
+.timeline li:nth-child(even) {
+  background-color: #d3d7d8;
+}
+.timeline ul {
+  padding: 5px 0px 0px 0px;
+}
+.timeline li {
+  width: 100%;
+  padding-bottom: 2px;
+}
 
 .timeline1 {
-  width: 560px;
-  height: 380px;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 95%;
   background-color: #dde1e2;
   padding-bottom: 2em;
   -webkit-box-shadow: #bdc3c7 0 5px 5px;
@@ -86,12 +94,11 @@ body {
   -moz-border-radius-bottomright: 8px;
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin-bottom: 2em;
+  padding: 0px;
 }
 .timeline2 {
-  border: 1px solid blue;
-  width: 450px;
-  height: 60vh;
+  width: 500px;
+  height: 95%;
   background-color: #dde1e2;
   padding-bottom: 2em;
   -webkit-box-shadow: #bdc3c7 0 5px 5px;
@@ -103,17 +110,16 @@ body {
   -moz-border-radius-bottomright: 8px;
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  overflow: scroll;
 }
 .first2 {
-  width: 450px;
+  width: 500px;
   display: block;
-  margin: auto;
   background-color: rgb(70, 77, 89);
   /*text-shadow: #2084c7 1px 1px 0;*/
   padding: 0.8em 0 !important;
   color: white;
   text-align: center;
-  margin-top: 1em;
   font-family: "Lato";
   font-size: 1.2em;
   -moz-border-radius-topleft: 8px;
@@ -124,13 +130,16 @@ body {
   border-top-right-radius: 8px;
   position: relative;
 }
-#chartContainer {
+#searchText {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 50px;
 }
+
 #tweets {
-  border: 1px solid red;
+  height: 95%;
 }
 
 .avatar {
@@ -158,13 +167,10 @@ body {
 .first {
   width: 560px;
   display: block;
-  margin: auto;
   background-color: rgb(70, 77, 89);
-  /*text-shadow: #2084c7 1px 1px 0;*/
   padding: 0.8em 0 !important;
   color: white;
   text-align: center;
-  margin-top: 1em;
   font-family: "Lato";
   font-size: 1.2em;
   -moz-border-radius-topleft: 8px;
@@ -174,6 +180,23 @@ body {
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
   position: relative; }
+
+  .first1 {
+    width: 500px;
+    display: block;
+    background-color: rgb(70, 77, 89);
+    padding: 0.8em 0 !important;
+    color: white;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 1.2em;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative; }
 
 /*.icon-twitter {
   font-size: 1.5em; }*/
