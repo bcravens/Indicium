@@ -1,7 +1,8 @@
 html,body {
   height: 100%;
   margin: 0;
-  padding: 0;
+
+
 }
 body {
   /*background: url("/images/background.jpeg");*/
@@ -42,6 +43,7 @@ main {
 }
 #brand {
   font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 20px;
-  color: white;
+  letter-spacing: 5px;
+  color: black;
+  margin-bottom: 20px;
 }
