@@ -84,7 +84,7 @@
       <span class='first2'>Associations</span>
         <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
         <ul>
-          <li><a data-ui-sref="show({search: '{{vm.searchTerm}}'})"><h2>{{concept.text}}</h2></a></li>
+          <li><a data-ui-sref="show({search: '{{concept.text}}'})"><h2>{{concept.text}}</h2></a></li>
           <li><h4>{{vm.roundSentiment(concept.relevance)}}% Relevance</h4></li>
           <hr>
         </ul>
