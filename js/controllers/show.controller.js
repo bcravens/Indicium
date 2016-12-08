@@ -10,7 +10,7 @@
   ]);
 
   function ShowController($stateParams, TweetFactory){
-    this.searchTerm = $stateParams.search
+    this.searchTerm = $stateParams.search.toUpperCase()
 
     this.response = TweetFactory.get({search: $stateParams.search});
     this.response.$promise.then((data) => {
