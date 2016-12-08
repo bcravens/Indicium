@@ -49,7 +49,7 @@ body {
   border-right: 20px solid #ecf0f1; }
 
 .timeline {
-  width: 560px;
+  width: 500px;
   display: block;
   overflow: scroll;
   height: 92%;
@@ -64,6 +64,7 @@ body {
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 0px;
+  margin-bottom: 5px;
 }
 
 .timeline li:nth-child(even) {
@@ -95,6 +96,7 @@ body {
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 0px;
+  margin-bottom: 5px;
 }
 .timeline2 {
   font-family: 'Josefin Sans', sans-serif;
@@ -112,6 +114,7 @@ body {
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
   overflow: scroll;
+  margin-bottom: 5px;
 }
 .first2 {
   width: 500px;
@@ -143,6 +146,8 @@ body {
 
 #tweets {
   height: 95%;
+  margin: 0px 10px 20px 0px;
+  width: 500px;
 }
 
 .avatar {
@@ -168,7 +173,7 @@ body {
     opacity: 1; }
 
 .first {
-  width: 560px;
+  width: 500px;
   display: block;
   background-color: rgb(70, 77, 89);
   padding: 0.8em 0 !important;
