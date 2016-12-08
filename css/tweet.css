@@ -139,9 +139,9 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Josefin Sans', sans-serif;
-  margin-bottom: 50px;
-  font-size: 50px;
-  letter-spacing: 10px;
+  margin-bottom: 35px;
+  font-size: 40px;
+  letter-spacing: 5px;
 }
 
 #tweets {
@@ -151,16 +151,16 @@ body {
 }
 
 .avatar {
-  width: 18%;
+  /*width: 18%;*/
   display: inline-block;
-  vertical-align: top;
+  vertical-align: center;
   position: relative;
   overflow: hidden;
-  margin-left: 2%; }
+  margin-left: 2%; 
+}
   .avatar img {
-    margin-top: 15px;
-    width: 100%;
-    height: auto;
+    height: 120px;
+    width: 120px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
