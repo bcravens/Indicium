@@ -84,12 +84,12 @@ input:focus {
 #showContent {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 76vh;
   width: 100%;
   padding: 15px 15px 0 15px;
   flex-wrap: wrap;
-  border: 1px solid black
+  /*border: 1px solid black*/
 }
 #sentiment {
   height: 100px;
