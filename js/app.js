@@ -15,13 +15,13 @@
       $stateProvider
       .state("index", {
         url: "/",
-        templateUrl: "/js/ng-views/index.html",
+        templateUrl: "js/ng-views/index.html",
         controller: "IndexController",
         controllerAs: "vm"
       })
       .state("show", {
         url: "/tweets/:search",
-        templateUrl: "/js/ng-views/show.html",
+        templateUrl: "js/ng-views/show.html",
         controller: "ShowController",
         controllerAs: "vm"
       });
