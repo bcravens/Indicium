@@ -5,30 +5,35 @@
   align-items: center;
   margin: 0px 10px 40px 0px;
 }
-#what {
+
+#emotions {
   height: 100%;
 }
+
 li {
 	list-style-type: none;
   width: 450px;
   min-width: 450px;
-
 }
+
 progress[value] {
   width: 100%; height: 30px;
-	background-color: whiteSmoke;
+	background-color: white;
 	border-radius: 3px;
 	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
 	margin: 0 0 .5em;
 }
+
 progress[value]::-webkit-progress-bar {
-	background-color: whiteSmoke;
+	background-color: white;
 	border-radius: 3px;
 	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
 }
+
 progress[value]::-webkit-progress-value {
 	border-radius:3px;
 }
+
 .anger::-webkit-progress-value {
 	background-image:
 	-webkit-linear-gradient( 135deg,
@@ -42,6 +47,7 @@ progress[value]::-webkit-progress-value {
 														rgba(0,0,0,.2)),
      -webkit-linear-gradient( left, #ff9e9e, #e84214);
 }
+
 .disgust::-webkit-progress-value {
 	background-image:
 	-webkit-linear-gradient( 135deg,
@@ -55,6 +61,7 @@ progress[value]::-webkit-progress-value {
 														rgba(0,0,0,.2)),
      -webkit-linear-gradient( left, #ceff9e, #4cd132);
 }
+
 .fear::-webkit-progress-value {
 	background-image:
 	-webkit-linear-gradient( 135deg,
@@ -68,6 +75,7 @@ progress[value]::-webkit-progress-value {
 														rgba(0,0,0,.2)),
      -webkit-linear-gradient( left, #ffdfad, #ff9d00);
 }
+
 .joy::-webkit-progress-value {
 	background-image:
 	-webkit-linear-gradient( 135deg,
@@ -81,6 +89,7 @@ progress[value]::-webkit-progress-value {
 														rgba(0,0,0,.2)),
      -webkit-linear-gradient( left, #fffd8c, #fffa00);
 }
+
 .sadness::-webkit-progress-value {
 	background-image:
 	-webkit-linear-gradient( 135deg,

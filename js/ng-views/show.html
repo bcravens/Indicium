@@ -11,26 +11,21 @@
   <div id = "searchContainer">
     <div ng-controller="IndexController as vm">
 
-
       <div id= "searchContainer">
         <form ng-submit= "vm.addSearch()" ng-controller="IndexController as vm">
           <input id="search" ng-model="vm.newSearch" placeholder="Search for cool stuff like Westworld or Politics..." type="text" >
         </form>
       </div>
 
-
-
     </div>
   </div>
 
   <div id="showContent">
 
-
     <div id="charts">
-
-      <div id="what">
-      <span class='first1'>Emotion</span>
-      <div class="timeline1">
+      <div id="emotions">
+      <span class='emotionHeader'>Emotion</span>
+      <div class="emotionsContainer">
         <ul id="chartContainer">
         	<li>
             <h1 id="searchText">{{vm.searchTerm}}</h1>
@@ -57,12 +52,11 @@
         	</li>
         </ul>
       </div>
-
       </div>
     </div>
 
     <div id="tweets">
-      <span class="first">Tweets</span>
+      <span class="tweetHeader">Tweets</span>
       <ul class="timeline" >
         <li data-ng-repeat="tweet in vm.tweets">
           <div class="avatar">
@@ -80,8 +74,8 @@
       </ul>
     </div>
 
-    <div class="timeline2">
-      <span class='first2'>Associations</span>
+    <div class="related">
+      <span class='relatedHeader'>Associations</span>
         <div  style="width: 50%;" data-ng-repeat="concept in vm.sentiment.concepts | filter:relevance">
         <ul>
           <li><a data-ui-sref="show({search: '{{concept.text}}'})"><h2>{{concept.text}}</h2></a></li>

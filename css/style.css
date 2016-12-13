@@ -1,11 +1,6 @@
 html,body {
   height: 100%;
   margin: 0;
-
-
-}
-body {
-  /*background: url("/images/background.jpeg");*/
 }
 
 input[type="text"] {
@@ -27,6 +22,7 @@ input:focus::-webkit-input-placeholder {
 main {
   height: 100%;
 }
+
 #content {
   height: 100%;
   width: 100%;
